@@ -105,12 +105,12 @@ Framework responsável por fazer a integração do código Java com a linguagem 
 
 - Clone do projeto
 ```bash
-git clone 
+git clone https://github.com/natbelo/ProjetoFinalAccenture
 ```
 
 - Entrando na pasta do projeto
 ```bash
-cd projeto-final-accenture-qa
+cd projeto-selenium-acc
 ```
 
 - Configurando Selenium
@@ -165,21 +165,23 @@ mvnw.cmd clean
 
     |  |  |  |-- cucumber
 
-    |  |  |  |  |-- equipe200
+    |  |  |  |  |-- natalia
 
-    |  |  |  |  |  |-- servicos -- Pasta para colocar Classes em Java para usar nos arquivos Steps
+    |  |  |  |  |  |-- servico -- Pasta para colocar Classes em Java para usar nos arquivos Steps
     
     |  |  |  |  |  |  |-- Configuracao -- Conjunto de classes em java para facilitar o processo das Steps
 
-    |  |  |  |  |  |-- CaracteristicasAccentureSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+    |  |  |  |  |  |-- TesteVehicleDataSteps.java -- Passos escritos em java com selenium abrindo o site e iniciando o preenchimento dos formulários com os dados do veículo
  
     |  |  |  |  |  |-- CompartilhadoSteps.java -- Passos escritos em java com selenium em comum entre os cenários
     
-    |  |  |  |  |  |-- ConfigurarCookiesSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+    |  |  |  |  |  |-- TesteInsurantDataSteps.java -- Passos escritos em java com selenium inserindo os dados do seguro
     
-    |  |  |  |  |  |-- ListaDeCarreirasSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+    |  |  |  |  |  |-- TesteProductDataSteps.java -- Passos escritos em java com selenium inserindo os dados do produto
     
-    |  |  |  |  |  |-- ListaDeServicosSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+    |  |  |  |  |  |-- SelectionPriceSteps.java -- Passos escritos em java com selenium para selecionar as opções de preços
+
+    |  |  |  |  |  |-- SendQuoteSteps.java -- Passos escritos em java com selenium para enviar os dados de cotação
 
     |  |  |  |  |  |-- RunCucumberTest.java -- Arquivo que configura a inicialização do Java test
 
@@ -189,16 +191,11 @@ mvnw.cmd clean
 
     |  |  |  |-- cucumber
 
-    |  |  |  |  |-- equipe200
+    |  |  |  |  |-- natalia
 
-    |  |  |  |  |  |-- caracteristicasAccenture.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
+    |  |  |  |  |  |-- testeSelenium.feature -- Gherkin com os cenários de teste de acordo com o cliente
 
-    |  |  |  |  |  |-- configurarCookie.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
-
-    |  |  |  |  |  |-- listaDeCarreiras.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
-
-    |  |  |  |  |  |-- listaDeServicos.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
-
+    
   test.bat -- Arquivo para rodar teste no Windows
   
   test.sh -- Arquivo para rodar teste no Unix
